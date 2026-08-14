@@ -1,0 +1,5 @@
+Place your video file in this directory and name it:
+hero-video.mp4
+
+Vite serves all files in the "public" folder directly from the root path (e.g. /hero-video.mp4).
+Supported formats: .mp4, .webm, .mov
