@@ -16,7 +16,7 @@ export const AboutFounder: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-stone-200 shadow-sm mb-3">
             <Sparkles className="w-3.5 h-3.5 text-gold-600" />
             <span className="text-[10px] font-sans font-bold tracking-[0.2em] text-foreground/80 uppercase">
-              The Founder &bull; Prime Constructions &amp; Interiors
+              The Founder &bull; Makan Constructions &amp; Interiors
             </span>
           </div>
           <h2 className="font-sans font-extrabold text-2xl sm:text-3xl md:text-4xl text-foreground tracking-tight">
@@ -38,7 +38,7 @@ export const AboutFounder: React.FC = () => {
               <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-3 border-white aspect-[4/4.6] bg-stone-200">
                 <img
                   src="/founder.png"
-                  alt="Founder & Principal Interior Architect - Syed Bilal"
+                  alt="Founder & Principal - Mohammed Jawad"
                   className="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-700"
                 />
                 
@@ -86,7 +86,7 @@ export const AboutFounder: React.FC = () => {
                 </h3>
 
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-3">
-                  With over fifteen years spent both at the drafting table and directly on active construction sites, I founded <strong className="text-foreground font-semibold">Prime Constructions and Interiors</strong> to solve a fundamental industry dilemma: the disconnect between the interior designer’s dream and the general contractor’s execution.
+                  With over fifteen years spent both at the drafting table and directly on active construction sites, I founded <strong className="text-foreground font-semibold">Makan Constructions &amp; Interiors</strong> to solve a fundamental industry dilemma: the disconnect between the interior designer’s dream and the general contractor’s execution.
                 </p>
 
                 <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mb-6">
@@ -130,7 +130,7 @@ export const AboutFounder: React.FC = () => {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-4 border-t border-stone-100">
                   <div className="flex flex-col">
                     <span className="font-sans font-bold text-lg sm:text-xl text-foreground">
-                      Syed Bilal
+                      Mohammed Jawad
                     </span>
                     <span className="text-[11px] font-semibold text-gold-600 tracking-wider uppercase">
                       Founder &bull; Principal Interior Architect &amp; Constructor

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { GlassButton } from '@/components/ui/glass-button';
 import {
   Phone,
-  Mail,
   Instagram,
   MessageCircle,
   Sparkles,
@@ -40,30 +39,23 @@ export const FooterContact: React.FC = () => {
     {
       name: 'WhatsApp',
       icon: MessageCircle,
-      href: 'https://wa.me/917892303492?text=Hello%20Syed%20Bilal,%20I%20would%20like%20to%20inquire%20about%20an%20interior%20design%20and%20construction%20project%20with%20Prime%20Constructions.',
+      href: 'https://wa.me/917899962191?text=Hello%20Mohammed%20Jawad,%20I%20would%20like%20to%20inquire%20about%20a%20construction%20and%20interior%20project%20with%20Makan%20Constructions%20%26%20Interiors.',
       color: 'bg-emerald-500 hover:bg-emerald-600 text-white shadow-emerald-500/25',
       label: 'WhatsApp'
     },
     {
       name: 'Phone Call',
       icon: Phone,
-      href: 'tel:+917892303492',
+      href: 'tel:+917899962191',
       color: 'bg-stone-900 hover:bg-stone-800 text-gold-300 shadow-stone-900/25',
       label: 'Direct Call'
     },
     {
       name: 'Instagram',
       icon: Instagram,
-      href: 'https://www.instagram.com/syed__bilal44/?hl=en',
+      href: 'https://www.instagram.com/engineer__jawad?igsh=OHp5dTEzdmEyZ2hi',
       color: 'bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white shadow-rose-500/25',
       label: 'Instagram'
-    },
-    {
-      name: 'Email',
-      icon: Mail,
-      href: 'mailto:contact@primeconstructions.design',
-      color: 'bg-gold-500 hover:bg-gold-600 text-white shadow-gold-500/25',
-      label: 'Email Us'
     }
   ];
 
@@ -79,19 +71,19 @@ export const FooterContact: React.FC = () => {
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-stone-200 shadow-sm mb-3">
             <Sparkles className="w-3.5 h-3.5 text-gold-600" />
             <span className="text-[10px] font-sans font-bold tracking-[0.2em] text-foreground/80 uppercase">
-              Direct Channels &bull; Prime Studio
+              Direct Channels &bull; Makan Studio
             </span>
           </div>
           <h2 className="font-sans font-extrabold text-2xl sm:text-3xl md:text-4xl text-foreground tracking-tight">
             Connect With <span className="text-gold-600">Our Founder</span>
           </h2>
           <p className="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed">
-            Click any icon below to connect directly with Syed Bilal, or leave a message for a custom spatial estimate.
+            Click any icon below to connect directly with Mohammed Jawad, or leave a message for a custom spatial estimate.
           </p>
         </div>
 
-        {/* Quick Direct Redirect Icon Grid - Refined Compact Size */}
-        <div className="flex items-center justify-center gap-4 sm:gap-6 flex-wrap mb-12 sm:mb-16">
+        {/* Quick Direct Redirect Icon Grid - Only Pure Clickable Icons */}
+        <div className="flex items-center justify-center gap-5 sm:gap-7 flex-wrap mb-12 sm:mb-16">
           {contactLinks.map((item) => {
             const Icon = item.icon;
             return (
@@ -100,17 +92,15 @@ export const FooterContact: React.FC = () => {
                 href={item.href}
                 target={item.href.startsWith('http') ? '_blank' : undefined}
                 rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="group flex flex-col items-center gap-2"
+                className="group flex items-center justify-center"
                 aria-label={item.name}
+                title={item.name}
               >
                 <div
-                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center shadow-md transition-all duration-300 transform group-hover:scale-110 group-active:scale-95 border border-white/60 ${item.color}`}
+                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 transform group-hover:scale-110 group-active:scale-95 border border-white/60 ${item.color}`}
                 >
                   <Icon className="w-6 h-6 sm:w-7 sm:h-7 transition-transform group-hover:rotate-6" />
                 </div>
-                <span className="font-sans font-bold text-xs text-stone-700 group-hover:text-gold-700 transition-colors">
-                  {item.label}
-                </span>
               </a>
             );
           })}
@@ -126,7 +116,7 @@ export const FooterContact: React.FC = () => {
               Send a Direct Message
             </h3>
             <p className="text-xs text-muted-foreground mt-1">
-              Fill out this quick form and Syed Bilal will personally review your floor plan and spatial requirements.
+              Fill out this quick form and Mohammed Jawad will personally review your floor plan and spatial requirements.
             </p>
           </div>
 
@@ -137,7 +127,7 @@ export const FooterContact: React.FC = () => {
                 Consultation Request Received!
               </h4>
               <p className="text-xs text-emerald-800 max-w-md">
-                Thank you! Syed Bilal will review your project scope and connect with you within 24 hours.
+                Thank you! Mohammed Jawad will review your project scope and connect with you within 24 hours.
               </p>
             </div>
           ) : (
@@ -227,7 +217,7 @@ export const FooterContact: React.FC = () => {
           <div className="flex items-center gap-3">
             <img
               src="/logo.svg"
-              alt="Prime Constructions and Interiors Logo"
+              alt="Makan Constructions and Interiors Logo"
               className="h-12 sm:h-14 w-auto object-contain"
             />
           </div>
@@ -240,7 +230,7 @@ export const FooterContact: React.FC = () => {
 
         {/* Bottom Legal & Copyright Bar */}
         <div className="pt-6 mt-6 border-t border-stone-200/60 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-stone-500">
-          <p>© 2026 Prime Constructions and Interiors. All Rights Reserved.</p>
+          <p>© 2026 Makan Constructions &amp; Interiors. All Rights Reserved.</p>
           <div className="flex items-center gap-6">
             <span className="hover:text-stone-800 transition-colors">Contractor License Registered</span>
             <span className="hover:text-stone-800 transition-colors">Privacy Policy</span>

@@ -62,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Prime Constructions Brand Logo */}
+          {/* Makan Constructions Brand Logo */}
           <a
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = () => {
           >
             <img
               src="/logo-white.png"
-              alt="Prime Constructions and Interiors Logo"
+              alt="Makan Constructions and Interiors Logo"
               className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-h-[90px] object-contain transition-transform group-hover:scale-105 filter drop-shadow-md"
             />
           </a>

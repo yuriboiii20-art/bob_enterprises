@@ -66,7 +66,7 @@ export const SplashScreen: React.FC<SplashScreenProps> = ({ onComplete }) => {
         >
           <img
             src="/logo-white.png"
-            alt="Prime Constructions and Interiors Logo"
+            alt="Makan Constructions and Interiors Logo"
             className="w-72 sm:w-96 md:w-[420px] h-auto object-contain mx-auto"
           />
         </div>

@@ -57,7 +57,7 @@ export const HeroSection: React.FC = () => {
           
           {/* Bold Brand Accent */}
           <div className="text-gold-300 font-sans font-bold tracking-[0.25em] text-xs sm:text-sm uppercase mb-4 drop-shadow-md">
-            PRIME CONSTRUCTIONS &amp; INTERIORS
+            MAKAN CONSTRUCTIONS &amp; INTERIORS
           </div>
 
           {/* Clean Modern Headline (No Underline, Clean Contemporary Geometry) */}
