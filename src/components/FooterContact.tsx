@@ -22,6 +22,24 @@ export const FooterContact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    let messageText = `Hello Mohammed Jawad, I would like to inquire about a project with Makan Constructions & Interiors.`;
+    if (formData.name) {
+      messageText += `\n\n*Name:* ${formData.name}`;
+    }
+    if (formData.phone) {
+      messageText += `\n*Phone:* ${formData.phone}`;
+    }
+    if (formData.service) {
+      messageText += `\n*Service:* ${formData.service}`;
+    }
+    if (formData.message) {
+      messageText += `\n*Project Details:* ${formData.message}`;
+    }
+
+    const whatsappUrl = `https://wa.me/917899962191?text=${encodeURIComponent(messageText)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+
     setFormSubmitted(true);
     setTimeout(() => {
       setFormSubmitted(false);
@@ -32,7 +50,7 @@ export const FooterContact: React.FC = () => {
         service: 'Full Turnkey (Design + Construction)',
         message: ''
       });
-    }, 6000);
+    }, 4000);
   };
 
   const contactLinks = [
