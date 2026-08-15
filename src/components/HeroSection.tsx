@@ -12,8 +12,8 @@ export const HeroSection: React.FC = () => {
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.muted = true;
-      videoRef.current.play().catch((err) => {
-        console.log("Autoplay notice:", err);
+      videoRef.current.play().catch(() => {
+        // Autoplay policy fallback
       });
     }
   }, []);

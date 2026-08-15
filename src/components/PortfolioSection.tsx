@@ -2,36 +2,11 @@ import React, { useState } from 'react';
 import { Sparkles, X, ZoomIn } from 'lucide-react';
 
 const projectImages = [
-  {
-    id: 1,
-    src: '/projects/project1.jpg',
-    alt: 'Makan Constructions Project 1',
-    className: 'sm:col-span-1 lg:col-span-1 aspect-[4/3]'
-  },
-  {
-    id: 2,
-    src: '/projects/project2.jpg',
-    alt: 'Makan Constructions Project 2',
-    className: 'sm:col-span-1 lg:col-span-1 aspect-[3/4] sm:aspect-auto'
-  },
-  {
-    id: 3,
-    src: '/projects/project3.jpg',
-    alt: 'Makan Constructions Project 3',
-    className: 'sm:col-span-1 lg:col-span-1 aspect-[4/3]'
-  },
-  {
-    id: 4,
-    src: '/projects/project4.jpg',
-    alt: 'Makan Constructions Project 4',
-    className: 'sm:col-span-1 lg:col-span-1 aspect-[4/3]'
-  },
-  {
-    id: 5,
-    src: '/projects/project5.jpg',
-    alt: 'Makan Constructions Project 5',
-    className: 'sm:col-span-2 lg:col-span-2 aspect-[16/9]'
-  }
+  { id: 1, src: '/projects/project1.jpg', alt: 'Makan Constructions Project 1' },
+  { id: 2, src: '/projects/project2.jpg', alt: 'Makan Constructions Project 2' },
+  { id: 3, src: '/projects/project3.jpg', alt: 'Makan Constructions Project 3' },
+  { id: 4, src: '/projects/project4.jpg', alt: 'Makan Constructions Project 4' },
+  { id: 5, src: '/projects/project5.jpg', alt: 'Makan Constructions Project 5' }
 ];
 
 export const PortfolioSection: React.FC = () => {
