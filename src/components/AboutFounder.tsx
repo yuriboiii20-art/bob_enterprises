@@ -31,31 +31,31 @@ export const AboutFounder: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
           
           {/* Founder Picture Column (5 cols) */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative mx-auto max-w-xs sm:max-w-sm lg:max-w-none">
+          <div className="lg:col-span-5 relative flex flex-col items-center">
+            <div className="relative mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none">
               
-              {/* Picture Frame - Reduced Height & Size */}
-              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-3 border-white aspect-[4/4.6] bg-stone-200">
+              {/* Picture Frame - Natural Full Portrait, No Cutting */}
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-3 border-white bg-stone-100 flex items-center justify-center">
                 <img
                   src="/founder.png"
                   alt="Founder & Principal - Mohammed Jawad"
-                  className="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-700"
+                  className="w-full h-auto max-h-[580px] object-contain object-center transform hover:scale-102 transition-transform duration-700"
                 />
-                
-                {/* Floating Experience Badge */}
-                <div className="absolute bottom-3 left-3 right-3 sm:bottom-4 sm:left-4 sm:right-4 bg-white/95 backdrop-blur-md rounded-xl p-3 border border-stone-200 shadow-lg">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-gold-400/20 text-gold-700 flex items-center justify-center font-sans font-extrabold text-lg">
-                      15+
-                    </div>
-                    <div>
-                      <h4 className="font-sans font-bold text-xs sm:text-sm text-foreground">
-                        Years of Dual Mastery
-                      </h4>
-                      <p className="text-[11px] text-muted-foreground">
-                        Interior Architect &bull; Licensed Contractor
-                      </p>
-                    </div>
+              </div>
+
+              {/* Experience Badge Placed Gracefully Below Photo */}
+              <div className="mt-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-3.5 border border-stone-200 shadow-md">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-gold-400/20 text-gold-700 flex items-center justify-center font-sans font-extrabold text-lg flex-shrink-0">
+                    15+
+                  </div>
+                  <div>
+                    <h4 className="font-sans font-bold text-xs sm:text-sm text-foreground">
+                      Years of Dual Mastery
+                    </h4>
+                    <p className="text-[11px] text-muted-foreground">
+                      Interior Architect &bull; Licensed Contractor
+                    </p>
                   </div>
                 </div>
               </div>
